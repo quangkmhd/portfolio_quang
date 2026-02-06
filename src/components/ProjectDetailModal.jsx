@@ -150,7 +150,8 @@ const soccerHighlightData = {
       title: 'Demo - Video Editor Integration',
       description: 'Sau khi import video và file metadata vào phần mềm chỉnh sửa video, tên Highlight và thời gian được hiển thị ở caption.'
     },
-  ]
+  ],
+  driveUrl: 'https://drive.google.com/drive/u/2/folders/1HfrgwyHZ3h4qtbAWF_RlLelu_n_U7Rkj'
 }
 
 const iqMeetData = {
@@ -417,6 +418,19 @@ export default function ProjectDetailModal({ isOpen, onClose, projectId }) {
                         ))}
                       </div>
                     </div>
+
+                    {data.driveUrl && (
+                      <div className="content-section">
+                        <h3>📁 Tài Nguyên Dự Án</h3>
+                        <div className="achievement-item drive-link" style={{ cursor: 'pointer', border: '1px solid #34A853' }}>
+                          <span className="achievement-icon">📁</span>
+                          <div onClick={() => window.open(data.driveUrl, '_blank')}>
+                            <strong>Google Drive Assets</strong>
+                            <p style={{ margin: 0, fontSize: '0.8rem' }}>Xem toàn bộ video gốc, clips kết quả và tệp cấu hình.</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </motion.div>
                 )}
 
@@ -517,6 +531,7 @@ export default function ProjectDetailModal({ isOpen, onClose, projectId }) {
                       
                       {/* Image Gallery */}
                       <div className="image-gallery">
+                        <h4>📸 Hình ảnh giao diện</h4>
                         <div className="gallery-main">
                           <button className="gallery-nav prev" onClick={prevImage}>
                             <FiChevronLeft />

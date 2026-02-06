@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
-import { FiExternalLink, FiGithub, FiChevronDown, FiChevronUp, FiArrowRight } from 'react-icons/fi'
+import { FiExternalLink, FiGithub, FiChevronDown, FiChevronUp, FiArrowRight, FiFolder } from 'react-icons/fi'
 import ProjectDetailModal from './ProjectDetailModal'
 import './Projects.css'
 
@@ -22,7 +22,7 @@ const projects = [
       { label: 'Detection Accuracy', value: '85-90%', detail: 'Key action detection' },
       { label: 'Time Reduction', value: '90%', detail: 'Labor cost savings' },
     ],
-    // demoUrl: 'https://example.com',
+    driveUrl: 'https://drive.google.com/drive/u/2/folders/1HfrgwyHZ3h4qtbAWF_RlLelu_n_U7Rkj', // Link Google Drive
     githubUrl: 'https://github.com/quangkmhd/soccer-highlight',
   },
   {
@@ -132,6 +132,11 @@ function ProjectCard({ project, index, onOpenModal }) {
         {project.demoUrl && (
           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             <FiExternalLink /> Live Demo
+          </a>
+        )}
+        {project.driveUrl && (
+          <a href={project.driveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ color: '#34A853' }}>
+            <FiFolder /> Google Drive
           </a>
         )}
         {project.githubUrl && (
