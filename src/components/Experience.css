@@ -1,0 +1,174 @@
+.experience {
+  background: var(--color-bg-primary);
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  display: flex;
+  gap: var(--space-6);
+  position: relative;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.marker-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-tertiary);
+  border: 3px solid var(--color-border);
+  z-index: 1;
+}
+
+.marker-dot.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  animation: glow 2s infinite;
+}
+
+.marker-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(
+    180deg,
+    var(--color-border) 0%,
+    transparent 100%
+  );
+  margin-top: var(--space-2);
+}
+
+.experience-content {
+  flex: 1;
+  padding: var(--space-6);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.experience-header h3 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.company {
+  font-size: var(--text-base);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.period-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+}
+
+.current-indicator {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+  animation: pulse 2s infinite;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.achievement-item {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.achievement-item:hover {
+  border-color: var(--color-border-accent);
+  background: var(--color-bg-tertiary);
+}
+
+.achievement-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-dim);
+  border-radius: var(--radius-full);
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.achievement-content h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.achievement-content p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.achievement-impact {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-accent-dim);
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 640px) {
+  .experience-item {
+    gap: var(--space-4);
+  }
+
+  .timeline-marker {
+    display: none;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .period-badge {
+    width: fit-content;
+  }
+
+  .achievement-item {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}

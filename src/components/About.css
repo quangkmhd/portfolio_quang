@@ -1,0 +1,124 @@
+.about {
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-primary) 0%,
+    var(--color-bg-secondary) 100%
+  );
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.about-intro {
+  font-size: var(--text-lg);
+  color: var(--color-text-primary);
+}
+
+.about-intro strong {
+  color: var(--color-accent);
+}
+
+.about-content p {
+  font-size: var(--text-base);
+  line-height: 1.8;
+}
+
+.about-content em {
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+.about-quote {
+  padding: var(--space-6);
+  margin-top: var(--space-4);
+  border-left: 3px solid var(--color-accent);
+}
+
+.about-quote blockquote {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-style: italic;
+  margin: 0;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.highlight-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-dim);
+  border: 1px solid var(--color-border-accent);
+  border-radius: var(--radius-md);
+  color: var(--color-accent);
+  font-size: var(--text-xl);
+}
+
+.highlight-card h4 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.highlight-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
