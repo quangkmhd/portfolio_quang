@@ -23,7 +23,7 @@ const projects = [
       { label: 'Time Reduction', value: '90%', detail: 'Labor cost savings' },
     ],
     // demoUrl: 'https://example.com',
-    // githubUrl: 'https://github.com/quangkmhd/soccer-highlight',
+    githubUrl: 'https://github.com/quangkmhd/soccer-highlight',
   },
   {
     id: 'iqmeet',
