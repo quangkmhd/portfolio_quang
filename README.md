@@ -1,14 +1,14 @@
 # Quang's AI Portfolio
 
-![React](https://img.shields.io/badge/React-19.2-blue.svg)
-![Vite](https://img.shields.io/badge/Vite-7.2-purple.svg)
-![Three.js](https://img.shields.io/badge/Three.js-3D-black.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![React](https://img.shields.io/badge/React-19.2-61DAFB?style=flat-square&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-3D-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 
 A stunning, highly interactive 3D portfolio showcasing production-ready AI systems and LLM Agents. Built for technical recruiters, engineering managers, and open-source collaborators seeking an AI Engineer obsessed with latency, cost optimization, and reliability. Highlights concrete, real-world impact such as reducing video processing time by 90% and serving over 500 active SaaS users.
 
-![Interactive 3D Portfolio Showcase](assets/demo.png)
-*(Placeholder: A high-quality GIF showing the 3D rotating elements, smooth page transitions via Framer Motion, and the project highlights section)*
+![Quang's 3D AI Portfolio Showcase](assets/demo.png)
+
 
 ## Key Features
 
